@@ -22,9 +22,11 @@
 <link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.3"/>
 
 
+    <meta name="description" content="全栈技术分享,独立开发者的博客." />
 
 
-  <meta name="keywords" content="Hexo,next" />
+
+  <meta name="keywords" content="前端开发,全栈开发,独立开发博客" />
 
 
 
@@ -57,7 +59,7 @@
 
 
 
-  <title> Hello World // inh5 </title>
+  <title> Hello World // 顾苏琦·博客 </title>
 </head>
 
 <body>
@@ -82,7 +84,7 @@
       <span class="logo">
         <i class="icon-logo"></i>
       </span>
-      <span class="site-title">inh5</span>
+      <span class="site-title">顾苏琦·博客</span>
   </a>
   <span class="logo-line-after"><i></i></span>
 </h1>
@@ -99,13 +101,29 @@
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu menu-left">
+      
+        
+        <li class="menu-item menu-item-menu">
+          <a href="/">
+            <i class="menu-item-icon icon-menu"></i> <br />
+            menu.menu
+          </a>
+        </li>
       
         
         <li class="menu-item menu-item-home">
           <a href="/">
             <i class="menu-item-icon icon-home"></i> <br />
             首頁
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            <i class="menu-item-icon icon-categories"></i> <br />
+            分類
           </a>
         </li>
       
@@ -128,6 +146,24 @@
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+<form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'uJgYW3q4gkDhyHz9gUe3','2.0.0');
+</script>
+
+<div class="site-search-toggle"></div>
+    </div>
   
 </div>
 
@@ -260,7 +296,7 @@
           <img class="site-author-image" src="/images/default_avatar.jpg" alt="glivia" />
           <p class="site-author-name">glivia</p>
         </div>
-        <p class="site-description motion-element"></p>
+        <p class="site-description motion-element">全栈技术分享,独立开发者的博客.</p>
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -270,10 +306,10 @@
           </div>
 
           <div class="site-state-item site-state-categories">
-            
+            <a href="/categories">
               <span class="site-state-item-count">0</span>
               <span class="site-state-item-name">分類</span>
-              
+              </a>
           </div>
 
           <div class="site-state-item site-state-tags">
