@@ -225,7 +225,55 @@
 
       
         
-          
+          <h4 id="对程序猿来说，搭建个博客不是难事，无非是以下几种:"><strong>对程序猿来说，搭建个博客不是难事，无非是以下几种:</strong></h4><ol>
+<li><p>选择一些免费平台，类似于CSDN、博客园、新浪博客、网易博客、百度博客之类的。</p>
+</li>
+<li><p>自己从0开始，选择心仪的框架，上阿里云买空间、选个酷炫点的域名，开始部署。</p>
+</li>
+<li><p>基于以上两种方案的折中方案，就是我现在的方式，github上借助hexo托管博客。</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p><strong>什么是hexo？</strong></p>
+<ul>
+<li>hexo是一款基于Node.js的静态博客框架。目前在GitHub上已有<strong>5629</strong> star 和 <strong>878</strong> fork。配合markdown文件，就可以很轻松的管理博客了。</li>
+</ul>
+</blockquote>
+<h4 id="下面讲讲怎么搞吧。">下面讲讲怎么搞吧。</h4><ol>
+<li><p>首先你必须要有个github帐号。<a href="https://github.com" target="_blank" rel="external">(去申请)</a></p>
+</li>
+<li><p>在github上自己建个 Repositories，命名格式如下：<em>你的ID</em>+.github+.io</p>
+</li>
+<li><p>安装以下工具:<br> msysgit : git的工具 (<a href="http://code.google.com/p/msysgit/" target="_blank" rel="external">下载</a>)<br> Node.js : 玩Node.js的都要装这个 (<a href="http://nodejs.org/" target="_blank" rel="external">下载</a>)</p>
+</li>
+<li><p>安装HEXO  :<br> 安装命令: <code>npm install -g hexo</code></p>
+</li>
+<li><p>新建博客目录，在CMD中，切换到博客目录下，执行命令 <code>hexo init</code></p>
+</li>
+<li><p>在CMD中，继续执行 <code>npm install</code> 安装hexo所需要的依赖。</p>
+</li>
+</ol>
+<hr>
+<h4 id="4个命令玩转hexo">4个命令玩转hexo</h4><p><code>hexo g</code> == hexo generate : 用于生成静态资源文件<br><code>hexo d</code> == hexo deploy    : 同步到线上<br><code>hexo s</code> == hexo server     :  搭建本地博客，访问地址localhost:4000<br><code>hexo n *title*</code> == hexo new        : 发布新的博客</p>
+<hr>
+<h4 id="hexo的参数配置">hexo的参数配置</h4><p><strong>基本配置:</strong><br>1.配置hexo托管地址(<strong>把下面的glivia替换成你的id</strong>)</p>
+<p><em>/博客目录/_config.yml :</em> </p>
+<blockquote>
+<p>deploy:<br>    &nbsp;&nbsp;type: git<br>    &nbsp;&nbsp;repository:  <a href="https://github.com/glivia/glivia.github.io.git" target="_blank" rel="external">https://github.com/glivia/glivia.github.io.git</a><br>    &nbsp;&nbsp;branch: master</p>
+</blockquote>
+<hr>
+<h4 id="hexo相关主题Theme">hexo相关主题Theme</h4><p><a href="http://www.zhihu.com/question/24422335" target="_blank" rel="external">有那些好看的hexo主题？</a>from 知乎</p>
+<p><a href="https://hexo.io/themes/" target="_blank" rel="external">官方主题</a> from <a href="https://hexo.io/" target="_blank" rel="external">https://hexo.io/</a></p>
+<hr>
+<h4 id="如何安装主题">如何安装主题</h4><ol>
+<li><p>在github上找到心仪的样式后，如(<a href="https://github.com/glivia/hexo-theme-next)，执行以下命令，相当于把主题样式文件拷贝到您的theme目录下：" target="_blank" rel="external">https://github.com/glivia/hexo-theme-next)，执行以下命令，相当于把主题样式文件拷贝到您的theme目录下：</a><br><code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></p>
+</li>
+<li><p>在配置文件_config.yml中，修改theme字段为next</p>
+</li>
+<li>执行<code>hexo g</code> 命令，重新生成静态资源文件，<code>hexo s</code>一下，就可以看到新的主题了</li>
+</ol>
+
         
       
     </div>
